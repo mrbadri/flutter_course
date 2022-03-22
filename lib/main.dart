@@ -64,6 +64,7 @@ void main(){
               child: TextField(
                 maxLength: 5,
                 obscureText: false,
+                //this is not work in web!!!
                 keyboardType: TextInputType.number,
                 cursorColor: Colors.red,
                 controller: TextEditingController(),
