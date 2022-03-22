@@ -55,12 +55,38 @@ void main(){
               IconButton(onPressed: (){}, icon: Icon(Icons.search), splashColor: Colors.deepPurpleAccent,),
             ],
           ),
-          body: Container(
-            height:200,
-            width: double.infinity,
-            color: Colors.lightBlueAccent,
-                child: Image.asset("images/banner.png", fit: BoxFit.cover,),
+          body: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Col 1", style: TextStyle(backgroundColor: Colors.blue),),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: new Text("Col 2", style: TextStyle(backgroundColor: Colors.blue)),
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Col 1", style: TextStyle(backgroundColor: Colors.blue),),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: new Text("Col 2", style: TextStyle(backgroundColor: Colors.blue)),
+                  ),
+                ],
+              )
+            ],
           )
+
+
+          // Container(
+          //   height:200,
+          //   width: double.infinity,
+          //   color: Colors.lightBlueAccent,
+          //       child: Image.asset("images/banner.png", fit: BoxFit.cover,),
+          // ),
         ),
       )
   );
