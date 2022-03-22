@@ -57,31 +57,9 @@ void main(){
           ),
           body: Container(
             height:200,
+            width: double.infinity,
             color: Colors.lightBlueAccent,
-            child: Center(
-              child:  Center(
-                child: Padding(
-                  // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                  // padding: EdgeInsets.fromLTRB(10, 20, 15, 30),
-                  // padding: EdgeInsets.only(left: 10 , right: 20),
-                  padding: EdgeInsets.all(20),
-                  child: TextField(
-                    maxLength: 5,
-                    obscureText: false,
-                    //this is not work in web!!!
-                    keyboardType: TextInputType.number,
-                    cursorColor: Colors.red,
-                    controller: TextEditingController(),
-                    decoration: InputDecoration(
-                        hintText: "please enter username",
-                        prefixIcon: Icon(Icons.person),
-                        labelText: "Username",
-                        border: OutlineInputBorder(),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+                child: Image.asset("images/banner.png", fit: BoxFit.cover,),
           )
         ),
       )
